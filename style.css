@@ -102,5 +102,7 @@ header {
 }
 
 figure {
-    margin: 0;
+    margin: 16px auto;
+    display: grid;
+    place-items: center;
 }
