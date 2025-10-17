@@ -101,3 +101,7 @@ header,
 header {
     display: block;
 }
+
+figure {
+    margin: 0;
+}
