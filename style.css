@@ -2,6 +2,7 @@ body {
 background: #FFFFFF;
 }
 
+
 * {
 	font-family: Cambria,Georgia, "Times New Roman", Times, serif;
 }
@@ -12,7 +13,6 @@ figcaption.imageCaption {
 
 a {
     color: inherit;
-
 }
 
 blockquote a {
@@ -31,16 +31,17 @@ li {
 }
 h1 ,h2 ,h3 ,h4 {
 	line-height: 1.4;
+	font-weight: 500;
 }
 
 h1 {
-        font-size: 50px;
+        font-size: 36px;
         margin-bottom: 17px;
         color: #333;
 }
 
 h2 {
-        font-size: 24px;
+        font-size: 26px;
         line-height: 1.6;
         margin: 30px 0 0 0;
         margin-bottom: 18px;
@@ -49,51 +50,54 @@ h2 {
 }
 
 h3 {
-        font-size: 30px;
+        font-size: 24px;
         margin: 10px 0 20px 0;
         color: #333;
 }
 
 h4 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 10px 0 20px 0;
         color: #333;
 }
 
 
-
-      header {
+header {
         width: 640px;
         margin: auto;
-      }
-      section {
+}
+section {
         width: 640px;
         margin: auto;
-      }
-      section p {
+}
+section p {
         margin-bottom: 27px;
         font-size: 20px;
         line-height: 1.6;
         color: #333;
-      }
-      section img {
+}
+section img {
         max-width: 640px;
-      }
-      footer {
+}
+footer {
         padding: 0 20px;
         margin: 50px 0;
         text-align: center;
         font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
+}
+.aspectRatioPlaceholder {
         max-width: auto !important;
         max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
+}
+.aspectRatioPlaceholder-fill {
         padding-bottom: 0 !important;
-      }
-      header,
+}
+header,
       section[data-field=subtitle],
       section[data-field=description] {
         display: none;
-      }
+}
+	  
+header {
+    display: block;
+}
