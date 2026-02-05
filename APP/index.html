@@ -103,11 +103,8 @@
     </div>
 
     <script>
-        // --- المنطق البرمجي (JavaScript) ---
-        
-        // رابط ملف البيانات في GitHub (تأكد من استخدام الرابط الخام RAW)
-        // ملاحظة: استبدل الرابط أدناه برابط ملفك الحقيقي
-        const API_URL = 'tools.json'; 
+
+		const API_URL = 'tools.json'; 
 
         const app = document.getElementById('app');
         const statusBar = document.getElementById('status-bar');
@@ -121,7 +118,6 @@
                     if (!response.ok) throw new Error("Server Error");
                     const data = await response.json();
                     
-                    // حفظ البيانات في جهاز المستخدم (Offline Support)
                     localStorage.setItem('headshot_tools', JSON.stringify(data));
                     renderTools(data);
                     showStatus("Online - Content Updated", true);
@@ -130,12 +126,11 @@
                     loadFromCache();
                 }
             } else {
-                // إذا لم يكن هناك إنترنت، حمل من الذاكرة
-                loadFromCache();
+
+				loadFromCache();
             }
         }
 
-        // دالة التحميل من الذاكرة المحلية
         function loadFromCache() {
             const cachedData = localStorage.getItem('headshot_tools');
             if (cachedData) {
@@ -146,12 +141,11 @@
             }
         }
 
-        // دالة رسم الواجهة
         function renderTools(tools) {
             app.innerHTML = '';
             tools.forEach(tool => {
-                // بناء الصور للسلايدر
-                let imagesHTML = '';
+
+				let imagesHTML = '';
                 tool.images.forEach(img => {
                     imagesHTML += `<img src="${img}" alt="${tool.name}" loading="lazy">`;
                 });
@@ -179,9 +173,9 @@
             setTimeout(() => { statusBar.style.display = 'none'; }, 3000);
         }
 
-        // تشغيل التطبيق
         init();
     </script>
 </body>
 
 </html>
+
