@@ -33,7 +33,7 @@
 
         .container { padding: 10px; max-width: 340px; margin: 0 auto; }
 
-        /* البطاقة */
+   
         .card {
             background-color: #1E1E1E;
             border-radius: 16px;
@@ -109,10 +109,9 @@
         const app = document.getElementById('app');
         const statusBar = document.getElementById('status-bar');
 
-        // دالة التشغيل الرئيسية
         async function init() {
-            // 1. محاولة جلب البيانات من الإنترنت
-            if (navigator.onLine) {
+
+			if (navigator.onLine) {
                 try {
                     const response = await fetch(API_URL);
                     if (!response.ok) throw new Error("Server Error");
@@ -178,4 +177,5 @@
 </body>
 
 </html>
+
 
