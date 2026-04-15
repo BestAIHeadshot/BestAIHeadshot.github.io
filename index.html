@@ -64,9 +64,8 @@ My Top AI Tools to Generate Headshots –
 
  <script>
 document.querySelectorAll("a").forEach(a => {
-    // إذا كان الرابط يحتوي على old-site.com
-    if (a.href.includes("aragon.ai")) {
-        a.href = a.href.replace("aragon.ai", "headshotpro.com");
+    if (a.href.includes("aragon.ai/")) {
+        a.href = a.href.replace("aragon.ai/", "aragon.ai?redirectType&");
     }
 });
 </script>
